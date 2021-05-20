@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/img/manga/FaviconLeechTruyen.png">
+    <title>Trang chủ - Leed truyện</title>
+    <!--Favicon-->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!--Font Family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!--OWL-->
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
+    <!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <!--Tippy-->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <!--Box icon-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--Discord-->
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+    <!--CSS-->
+    <link rel="stylesheet/less" type="text/css" href="./assets/css/style.less" />
+
+
+</head>
+
+<body>
+
+    <canvas></canvas>
+
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <!-- <i class='bx bx-book-bookmark bx-tada'></i><span> -->
+                    <img src="./assets/img/manga/LeechTruyen.png" alt=""> &nbsp;
+                    </i>Leed<span class="logo-color">Truyen</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#"><i class="fas fa-book"></i>&nbsp;Thể Loại</a></li>
+                    <li><a href="#"><i class="fas fa-history"></i>&nbsp;Lịch Sử</a></li>
+                    <li><a href="#"><i class="fas fa-play-circle"></i>&nbsp;Truyện Đang Ra</a></li>
+                    <li>
+                        <form class="form-search">
+                            <div class="search">
+                                <input type="text" placeholder="Nhập tên truyện...">
+                                <span><i class="fas fa-search"></i></span>
+                            </div>
+                        </form>
+                    </li>
+
+                    <li>
+                        <div class="login">
+                            <button type="button" class="btn mouse-cursor-gradient-tracking">LOGIN</button>
+                        </div>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container">
+
+        <div class="card sliders">
+            <div class="card-body slider">
+                <div class="title"><i class="fas fa-fire"></i><span>&nbsp;Truyện Hot</span></div>
+                <div class="row owl-carousel owl-theme owl-drag"></div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-8 section-left">
+
+                <div class="card card-body sl-1">
+                    <div class="title"><i class="fas fa-sparkles"></i><span>&nbsp;Truyện Mới Cập Nhật</span></div>
+                    <div class="row newlyUpdatedStories"></div>
+                </div>
+
+                <div class="card card-body sl-2">
+
+                    <div class="title">
+                        <div class="tt-left">
+                            <i class="fas fa-book-medical"></i>
+                            <p>Truyện Mới</p>
+                        </div>
+                        <div class="tt-right">
+                            <p>Toàn Bộ >></p>
+                        </div>
+                    </div>
+
+                    <div class="row newStories"></div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 section-right">
+
+                <div class="card sr-top-donate">
+                    <div class="card-body  p-0 m-0">
+                        <div class="title-donate"><i class="fas fa-crown"></i>
+                            <p class="p">Top Donate</p>
+                        </div>
+                        <div class="top-donate-content">
+                            <div class="top3-rank-donate">
+                                <div class="top-rank">
+                                    <div class="top-rank-info">
+                                        <img class="top-rank-avatar avt1" src="./assets/img/manga/FaviconLeechTruyen.png" alt="">
+                                        <img class="top-rank-avatar-wrap" src="./assets/img/top-1.png" alt="">
+                                    </div>
+                                    <div class="top-rank-coin">100</div>
+                                </div>
+
+                                <div class="top-rank">
+                                    <div class="top-rank-info">
+                                        <img class="top-rank-avatar" src="./assets/img/manga/FaviconLeechTruyen.png" alt="">
+                                        <img class="top-rank-avatar-wrap" src="./assets/img/top-2.png" alt="">
+                                    </div>
+                                    <div class="top-rank-coin">80</div>
+                                </div>
+
+                                <div class="top-rank">
+                                    <div class="top-rank-info">
+                                        <img class="top-rank-avatar" src="./assets/img/manga/FaviconLeechTruyen.png" alt="">
+                                        <img class="top-rank-avatar-wrap" src="./assets/img/top-3.png" alt="">
+                                    </div>
+                                    <div class="top-rank-coin">50</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="top-rank-donate"></div>
+
+                    </div>
+                </div>
+
+                <div class="card sr-discord">
+                    <div class="card-body  p-0 m-0">
+                        <widgetbot server="843170728709980221" channel="843170729696428064" width="100%" height="500"></widgetbot>
+                    </div>
+                </div>
+
+                <div class="card sr-1">
+                    <div class="card-body p-0 m-0">
+                        <div class="title-history"><i class="fas fa-history"></i>
+                            <p class="p">Lịch Sử Đọc</p>
+                        </div>
+                        <div class="history-content"></div>
+                    </div>
+                </div>
+
+                <div class="card sr-2">
+                    <div class="card-body  p-0 m-0">
+                        <div class="title-comments"><i class="fas fa-comments"></i>
+                            <p class="p">Bình Luận Mới</p>
+                        </div>
+                        <div class="comments"></div>
+                    </div>
+                </div>
+
+                <div class="card sr-3">
+                    <div class="card-body p-0 m-0">
+                        <div class="medal"><i class="fas fa-medal"></i>
+                            <p class="p">Nhóm Dịch Nổi Bật</p>
+                        </div>
+                        <div class="story-translation-group"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="cl-4 cl-md-6 cl-sm-12">
+                    <div class="content">
+                        <a href="#" class="logo">
+                            <i class='bx bx-book-bookmark bx-tada'>&nbsp;</i>L<span class="main-color">e</span>ed<span class="main-color">T</span>ruyện
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut veniam ex quos hic id nobis beatae earum sapiente! Quod ipsa exercitationem officiis non error illum minima iusto et. Dolores, quibusdam?
+                        </p>
+                        <div class="social-list">
+                            <a href="https://fb.com/anome69/" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="https://vothanhthuan.github.io/vtt" class="social-item">
+                                <i class="bx bxl-github"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cl-8 cl-md-6 cl-sm-12">
+                    <div class="row">
+                        <div class="cl-3 cl-md-6 cl-sm-6">
+                            <p><b>Leed</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Pricing plans</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="cl-3 cl-md-6 cl-sm-6">
+                            <p><b>Browse</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Pricing plans</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="cl-3 cl-md-6 cl-sm-6">
+                            <p><b>Help</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Pricing plans</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="cl-3 cl-md-6 cl-sm-6">
+                            <p><b>Download app</b></p>
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/img/app-store.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/img/google-play.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                Copyright 2021 &copy; Võ Thành Thuận - DPM185194
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+</body>
+<script src="./assets/js/magic.js"></script>
+<script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/less.js"></script>
+
+</html>
